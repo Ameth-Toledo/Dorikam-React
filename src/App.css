@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner {
+    width: 100%;
+    height: auto; /* Asegura que la imagen mantenga su relación de aspecto */
+    display: block; /* Asegura que la imagen ocupe su espacio correctamente */
+  }
+  
+  .titulo-container {
+    position: absolute;             /* Posición absoluta para colocar el texto sobre la imagen */
+    top: 50%;                      /* Centramos verticalmente */
+    left: 80%;                     /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos el punto de referencia al centro */
+    text-align: right;            /* Alineamos el texto al centro */
+    z-index: 1;                    /* Asegura que el texto esté por encima de la imagen */
+    padding: 20px;                 /* Espaciado alrededor del texto */
+  }
+  
+  .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;                /* Tamaño relativo que se adapta al ancho de la pantalla */
+    margin: 0;                     /* Eliminamos márgenes por defecto */
+    color: rgb(0, 0, 0);           /* Color del texto */
+  }
+  
+  /* Media Queries para dispositivos más pequeños */
+  @media (max-width: 768px) { /* Tablets y dispositivos más pequeños */
+    .titulo {
+      font-size: 8vw; /* Aumentamos el tamaño para pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Móviles */
+    .titulo {
+      font-size: 10vw; /* Ajustamos aún más el tamaño del texto */
+    }
+  
+    .titulo-container {
+      padding: 10px;  /* Reducimos el padding en móviles */
+    }
+  }
+  
