@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTiktok, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -38,13 +38,13 @@ const Footer = () => {
               <a className="social-icons-footer-a" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
-              <a className="social-icons-footer-a" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTwitter} />
+              <a className="social-icons-footer-a" href="https://www.tiktok.com/@mr.linuxx?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTiktok} />
               </a>
-              <a className="social-icons-footer-a" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a className="social-icons-footer-a" href="https://www.instagram.com/ameth_toled/?hl=es" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a className="social-icons-footer-a" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a className="social-icons-footer-a" href="https://www.linkedin.com/in/ameth-de-jes%C3%BAs-m%C3%A9ndez-toledo/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+.direccion {
+    font-family: 'Poppins';
+}
+
+.entregas-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.mapa-ubicacion {
+    width: 50%;
+    height: 450px;
+    margin-right: 20px;
+}
+
+.info-container {
+    text-align: left;
+    width: 50%;
+}
+
+.telefono, .ubicacion, .horario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+.telefono .info-icon {
+    color: #007BFF; 
+}
+
+.ubicacion .info-icon {
+    color: #28A745; 
+}
+
+.horario .info-icon {
+    color: #FFC107; 
+}
+
+@media (max-width: 768px) {
+    .entregas-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .mapa-ubicacion {
+        width: 100%; 
+        margin: 0; 
+    }
+
+    .info-container {
+        width: 100%;
+        text-align: center; 
+        margin-top: 20px;
+    }
+}

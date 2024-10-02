@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import './Header.css'; 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const enviarEntregas = (e) => {
+    e.preventDefault(); 
+    navigate('/Dorikam-React/entregas'); 
   };
 
   return (
@@ -15,13 +22,15 @@ const Header = () => {
       <nav className={`dorikam-nav ${isOpen ? 'open' : ''}`}>
         <ul className="dorikam-menu">
           <li className="dorikam-menu-li">
-            <a href="#inicio" className="dorikam-menu-li-a">Inicio</a>
+            <a href="/Dorikam-React/" className="dorikam-menu-li-a">Inicio</a>
           </li>
           <li className="dorikam-menu-li">
             <a href="#catalogos" className="dorikam-menu-li-a">Catálogos</a>
           </li>
           <li className="dorikam-menu-li">
-            <a href="#entregas" className="dorikam-menu-li-a">Entregas</a>
+            <a href="/entregas" className="dorikam-menu-li-a" onClick={enviarEntregas}>
+              Entregas
+            </a>
           </li>
         </ul>
       </nav>
