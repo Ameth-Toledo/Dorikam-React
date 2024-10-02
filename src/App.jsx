@@ -9,7 +9,6 @@ import arete1 from "./assets/aretes/arete-flor.webp"
 import arete2 from "./assets/aretes/arete-elegante.webp"
 import arete3 from "./assets/aretes/arete-cristal.webp"
 
-
 function App() {
   return (
     <>

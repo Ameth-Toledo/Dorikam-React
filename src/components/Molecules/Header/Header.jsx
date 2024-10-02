@@ -15,6 +15,16 @@ const Header = () => {
     navigate('/Dorikam-React/entregas'); 
   };
 
+  const enviarCatalogos = (e) => {
+    e.preventDefault();
+    navigate('/Dorikam-React/catalogos');
+  }
+
+  const enviarInicio = (e) => {
+    e.preventDefault();
+    navigate('/Dorikam-React/');
+  }
+
   return (
     <header className="dorikam-header">
       <h1 className="dorikam-logo">Dorikam</h1>
@@ -22,10 +32,10 @@ const Header = () => {
       <nav className={`dorikam-nav ${isOpen ? 'open' : ''}`}>
         <ul className="dorikam-menu">
           <li className="dorikam-menu-li">
-            <a href="/Dorikam-React/" className="dorikam-menu-li-a">Inicio</a>
+            <a href="/Dorikam-React/" className="dorikam-menu-li-a" onClick={enviarInicio}>Inicio</a>
           </li>
           <li className="dorikam-menu-li">
-            <a href="#catalogos" className="dorikam-menu-li-a">Catálogos</a>
+            <a href="/catalogos" className="dorikam-menu-li-a" onClick={enviarCatalogos}>Catálogos</a>
           </li>
           <li className="dorikam-menu-li">
             <a href="/entregas" className="dorikam-menu-li-a" onClick={enviarEntregas}>
